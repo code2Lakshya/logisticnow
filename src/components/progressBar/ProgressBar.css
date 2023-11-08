@@ -1,0 +1,34 @@
+.progress-bar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+}
+.progress-bar-heading {
+    display: flex;
+    justify-content: space-between;
+}
+.progress-bar-heading p{
+    font-size: 14px;
+    color: #2f3985;
+    font-weight: 600;
+}
+.progress-bar-heading span{
+    background-color: #999999;
+    color: white;
+    font-size: 13px;
+    padding: 4px 8px;
+}
+.progress-bar-container .progress-bar-status{
+    width: 100%;
+}
+.progress-bar-status  span:nth-child(1){
+    display: inline-flex ;
+    height: 1.2px ;
+    background-color: red ;
+}
+.progress-bar-status  span:nth-child(2){
+    display: inline-flex ;
+    height: 1.2px ;
+    background-color: #ded9d9 ;
+}

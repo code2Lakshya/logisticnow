@@ -1,0 +1,68 @@
+.hero-section{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    z-index: 1;
+}
+.hero-cards{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.hero-cards::-webkit-scrollbar{
+    display: none;
+}
+.hero-card{
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+}
+.hero-card .lazy-load-image-background{
+    width: 100%;
+    height: 100%;
+}
+.hero-card p{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 36px;
+    font-weight: 500;
+    width: max-content;
+    padding: 0 30px;
+    color: white;
+    user-select: none;
+}
+.hero-card p span{
+    font-weight: 800;
+}
+.hero-section  .btn{
+    position: absolute;
+    top:50%;
+    font-size: 40px;
+    z-index: 2;
+    color: white;
+    cursor: pointer;
+}
+.hero-section #left{
+    left:10px;
+}
+.hero-section #right{
+    right: 10px;
+}
+@media screen and (max-width: 900px){
+    .hero-section{
+        height: 75vh
+    }
+    .hero-card p{
+        font-size: 20px;
+    }
+    .hero-section .btn{
+        font-size: 23px;
+    }
+}

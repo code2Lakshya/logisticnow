@@ -1,0 +1,9 @@
+.hover-effect-container{
+    width: 100%;
+    overflow: hidden;
+}
+.hover-effect-content{
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+}

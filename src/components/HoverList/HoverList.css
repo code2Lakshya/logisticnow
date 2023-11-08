@@ -1,0 +1,73 @@
+.hover-container{
+    position: relative;
+    padding-block: 13px;
+}
+.hover-container h3{
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    gap:3px;
+    position: relative;
+    z-index: 4;
+}
+.hover-container h3:hover{
+    color: red;
+}
+.hover-container span{
+    display: flex;
+    align-items: center;
+}
+.hover-container .hover-list{
+    position: absolute;
+    top:0;
+    left:-50%;
+    transform: translate(0%,40px);
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    list-style: none;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 3px;
+    animation: drop 0.4s linear forwards;
+    z-index: 0;
+}
+@keyframes drop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(40px);
+        opacity: 1;
+    }
+}
+.hover-container .hover-list li{
+    border-bottom: 1px solid rgb(204, 204, 204);
+}
+.hover-list li a{
+    display: inline-block;
+    padding: 13px;
+    width: 200px;
+}
+@media screen and (max-width: 900px){
+    .hover-container{
+        padding: 0;
+    }
+    .hover-container h3{
+        padding: 10px;
+        z-index: unset;
+    }
+    .hover-container .hover-list{
+        position: static;
+        animation: none;
+        transform: none;
+        width: 100%;
+        z-index: unset;
+        box-shadow: none;
+    }
+}
