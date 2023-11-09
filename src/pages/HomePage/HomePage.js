@@ -8,6 +8,7 @@ import HomeIcons from './HomeIcons/HomeIcons';
 import Interested from './Interested/Interested';
 import OurClients from './OurClients/OurClients';
 import Location from './Location/Location';
+import OurGallery from './OurGallery/OurGallery';
 
 const HomePage = () => {
 
@@ -18,6 +19,7 @@ const HomePage = () => {
             <HomeAbout />
             <OurServices />
             <HomeIcons />
+            <OurGallery />
             <Interested />
             <OurClients />
             <Location />

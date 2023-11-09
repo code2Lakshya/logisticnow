@@ -9,7 +9,8 @@ import imgSrc6 from '../../../assets/img-9.jpg';
 import imgSrc7 from '../../../assets/img-10.jpg';
 import imgSrc8 from '../../../assets/img-11.jpg';
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import 'react-lazy-load-image-component/src/effects/blur';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import './OurGallery.css';
 
 const OurGallery = () => {
 
