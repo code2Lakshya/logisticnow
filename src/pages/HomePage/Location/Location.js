@@ -26,6 +26,10 @@ const Location = () => {
                     <span><AiOutlineMail /></span>
                     <span>info@adslogistic.in</span>
                 </div>
+                <div className="card">
+                    <span><AiOutlineMail /></span>
+                    <span>sales@adslogistic.in</span>
+                </div>
             </div>
         </div>
     );

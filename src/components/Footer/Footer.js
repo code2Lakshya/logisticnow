@@ -37,6 +37,7 @@ const Footer = () => {
                             <p>Webel IT Park, Module 101, 1st Floor,New Town, Chakpachuria, West Bengal 700156</p>
                             <p>8282829955</p>
                             <p>info@adslogistic.in</p>
+                            <p>sales@adslogistic.in</p>
                             <div className="date">
                                 <h3>Mon – Fri</h3>
                                 <p>10:00 Am – 6:00 PM EST</p>

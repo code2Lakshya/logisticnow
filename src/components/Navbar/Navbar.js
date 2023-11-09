@@ -41,7 +41,7 @@ const Navbar = () => {
                         </p>
                         <p>
                             <span><AiOutlineMail /></span>
-                            info@adslogistic.in
+                            info@adslogistic.in || sales@adslogistic.in
                         </p>
                     </div>
                 </Wrapper>
