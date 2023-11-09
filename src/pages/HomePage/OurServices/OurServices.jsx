@@ -3,7 +3,9 @@ import HoverEffect from "../../../components/HoverEffect/HoverEffect";
 import Wrapper from "../../../components/Wrapper/Wrapper";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import imgSrc from '../../../assets/ourServices.jpg';
-import { MdPestControl } from 'react-icons/md';
+import { MdEmojiTransportation } from 'react-icons/md';
+import { ImTree } from 'react-icons/im';
+import { TbTruckDelivery } from 'react-icons/tb';
 import './OurServices.css';
 
 const OurServices = () => {
@@ -23,7 +25,7 @@ const OurServices = () => {
                         <div className="ourservices-card">
                             <div className="ourservices-icon">
                                 <span></span>
-                                <span><MdPestControl /></span>
+                                <span><TbTruckDelivery /></span>
                             </div>
                             <div className="ourservices-content">
                                 <h3>3PL SERVICES</h3>
@@ -37,7 +39,7 @@ const OurServices = () => {
                         <div className="ourservices-card">
                             <div className="ourservices-icon">
                                 <span></span>
-                                <span><MdPestControl /></span>
+                                <span><MdEmojiTransportation /></span>
                             </div>
                             <div className="ourservices-content">
                                 <h3>Transport</h3>
@@ -50,7 +52,7 @@ const OurServices = () => {
                         <div className="ourservices-card">
                             <div className="ourservices-icon">
                                 <span></span>
-                                <span><MdPestControl /></span>
+                                <span><ImTree /></span>
                             </div>
                             <div className="ourservices-content">
                                 <h3>4PL SERVICES</h3>
