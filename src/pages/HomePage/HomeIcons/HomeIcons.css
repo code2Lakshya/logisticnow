@@ -1,0 +1,69 @@
+.homeIcons{
+    width: 100%;
+    background-color: rgba(47,57,133,0.6);
+    padding: 80px 30px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin-top: -1px;
+}
+.homeIcons-inner{
+    visibility: visible;
+    opacity: 1;
+}
+.homeIcons-cards{
+    display: flex;
+    justify-content: space-between;
+    visibility: hidden;
+    opacity: 0;
+    gap:30px;
+}
+.homeIcons-card{
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+    align-items: center;
+}
+.homeIcons-card span{
+    font-size: 50px;
+}
+.homeIcons-card p{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+.homeIcons-card h3{
+    font-size: 14px;
+    color: #d8d2d2;
+    font-weight: 400;
+    text-align: center;
+}
+.homeIcons-inner.active .homeIcons-cards{
+    animation: icons 0.5s linear 1 forwards;
+}
+@keyframes icons{
+    0%{
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width: 900px) {
+    .homeIcons-cards{
+        flex-wrap: wrap;
+    }
+    .homeIcons-card{
+        width: calc(50% - 50px);
+    }
+    .homeIcons-card span{
+        font-size: 30px;
+    }
+    .homeIcons-card p{
+        font-size: 30px;
+    }
+}

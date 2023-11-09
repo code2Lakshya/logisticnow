@@ -1,6 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import HomePage from "./pages/HomePage/HomePage";
+import Footer from "./components/Footer/Footer";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path='4pl-services' element={<p>$pl Services Page</p>} />
         <Route path='/contact' element={<p>Contact Us Page</p>} />
       </Routes>
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }

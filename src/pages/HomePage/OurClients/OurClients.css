@@ -1,0 +1,83 @@
+.ourClients{
+    width: 100%;
+    background-image: url('../../../assets/clients.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    padding: 100px 30px;
+}
+.ourClients::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(47,57,133,0.6);
+}
+.ourClients .hover-effect-content.active{
+    animation: clients 0.5s linear 1 forwards;
+}
+@keyframes clients{
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.ourClients-header{
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+.ourClients-header p{
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+.ourClients-header h3{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+.ourClients-content{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.ourClients-cards{
+    height: 70px;
+    display: flex;
+    gap:60px;
+    padding: 0 30px;
+    animation: automatic 10s linear infinite;
+}
+@keyframes automatic{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.ourClients-cards img{
+    overflow: hidden;
+    height: 70px;
+    flex-shrink: 0;
+    transition: all 0.3s;
+}
+.ourClients-content:hover .ourClients-cards{
+    animation-play-state: paused;
+}
+.ourClients-cards img:hover{
+    transform: scale(1.1);
+}

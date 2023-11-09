@@ -1,0 +1,141 @@
+footer{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+}
+.footer-list{
+    width: 100%;
+    background-color: rgb(241, 251, 255);
+    padding: 50px 30px;
+}
+.footer-list-wrapper{
+    display: flex;
+    gap:40px;
+}
+.footer-desc{
+    max-width: 300px;
+}
+.footer-desc img{
+    width: 147px;
+    height: 56px;
+    margin-bottom: 25px;
+}
+.footer-desc p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.footer-heading h3{
+    font-size: 16px;
+    color: rgb(6, 22, 58);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer-services{
+    flex-shrink: 0;
+}
+.footer-services ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+}
+.footer-services li{
+    position: relative;
+    transition: all 0.3s;
+}
+.footer-services ul a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+}
+.footer-services li:before{
+    content: '>';
+    color: red;
+    font-size: 14px;
+    margin-right: 8px;
+}
+.footer-services li:hover{
+    transform: translateX(5px);
+}
+.get-in-touch{
+    max-width: 300px;
+}
+.get-in-touch > div{
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+}
+.get-in-touch p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.date h3{
+    margin-bottom: 4px;
+}
+.tweets{
+    max-width: 300px;
+}
+.tweets p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.tweets a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: #1c95de;
+    width: max-content;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    overflow: hidden;
+}
+.tweets a span{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+.tweets a:hover::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: 170px;
+    height: 100px;
+    background-color: rgb(235, 233, 233,0.2);
+    border-radius: 50%;
+    animation: item 0.3s linear 1 forwards;
+    transform-origin: center;
+}
+@keyframes item{
+    0%{
+        transform: scale(0,0) translate(-50%,-50%);
+    }
+    100%{
+        transform: scale(1,1) translate(-50%,-50%);
+    }
+}
+.footer-bottom{
+    background-color: #2f3985;
+    color: white;
+    padding: 30px;
+    font-size: 12px;
+    font-weight: 300;
+}
+@media screen and (max-width: 928px) {
+    .footer-list-wrapper{
+        flex-wrap: wrap;
+    }
+    .footer-desc{
+        max-width: 500px;
+    }
+}

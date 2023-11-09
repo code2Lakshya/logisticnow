@@ -20,3 +20,4 @@ export const homeAbout = [
         percentage: 95
     }
 ]
+export const services=['security','3pl services','pest control','4pl services','transport'];

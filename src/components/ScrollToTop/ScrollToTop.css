@@ -1,0 +1,22 @@
+.scrollToTop{
+    position: fixed;
+    right:14px;
+    bottom: 40px;
+    background-color: #2f3985;
+    z-index: 2;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 3px;
+    animation: pop 0.5s linear 1;
+    cursor: pointer;
+}
+@keyframes pop{
+    0%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}

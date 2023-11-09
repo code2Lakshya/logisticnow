@@ -3,6 +3,7 @@
     height: 85vh;
     position: relative;
     z-index: 1;
+    background-color: white;
 }
 .hero-cards{
     display: flex;

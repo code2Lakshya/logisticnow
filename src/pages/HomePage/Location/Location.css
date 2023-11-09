@@ -1,0 +1,46 @@
+.location{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.location .map-container{
+    width: 100%;
+    height: 400px;
+}
+.location-details{
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    border-radius: 10px;
+}
+.location-details > p{
+    max-width: 500px;
+    font-weight: 600;
+}
+.location-details .card{
+    display: flex;
+    align-items: center;
+}
+.location-details .card span:nth-child(1){
+    color: red;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.location-details .card span:nth-child(2){
+    font-size: 14px;
+    font-weight: 400;
+}
+@media screen and (max-width: 900px) {
+    .location-details{
+        max-width: 400px;
+        margin-inline: 50px;
+        left: 0;
+    }
+}

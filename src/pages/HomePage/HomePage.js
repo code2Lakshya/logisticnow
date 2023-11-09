@@ -4,6 +4,10 @@ import './HomePage.css';
 import OurServices from './OurServices/OurServices';
 import Services from './Services/Services';
 import imgSrc from '../../assets/bg.jpeg';
+import HomeIcons from './HomeIcons/HomeIcons';
+import Interested from './Interested/Interested';
+import OurClients from './OurClients/OurClients';
+import Location from './Location/Location';
 
 const HomePage = () => {
 
@@ -13,6 +17,10 @@ const HomePage = () => {
             <Services />
             <HomeAbout />
             <OurServices />
+            <HomeIcons />
+            <Interested />
+            <OurClients />
+            <Location />
             <img src={imgSrc} alt='scenery' />
         </div>
     );

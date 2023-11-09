@@ -140,6 +140,9 @@
     }
 }
 @media screen and (max-width: 900px) {
+    .ourservices{
+        padding-bottom: 30px;
+    }
     .ourservices-footer{
         flex-direction: column;
         align-items: center;

@@ -1,0 +1,89 @@
+.interested{
+    width: 100%;
+    background-color: white;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.interested-inner{
+    background-color: #2F3985;
+    padding: 80px 30px;
+}
+.interested .hover-effect-content.active{
+    animation: flow 0.5s linear 1 forwards;
+}
+@keyframes flow{
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.interested-wrapper{
+    display: flex;
+    gap:30px;
+    justify-content: center;
+}
+.interested-wrapper h3{
+    font-size: 23px;
+    font-weight: 400;
+    max-width: 300px;
+}
+.interested-wrapper div{
+    display: flex;
+    gap:30px;
+}
+.interested-wrapper p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 500px;
+}
+.interested-wrapper button{
+    width: 170px;
+    flex-shrink: 0;
+    font-size: 14px;
+    padding: 13px 0;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    text-transform: uppercase;
+    gap:5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-weight: 700;
+    color: #2F3985;
+    transition: all 0.3s;
+}
+.interested-wrapper button span{
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+.interested-wrapper button:hover span{
+   transform: translateX(4px);
+}
+@media screen and (max-width: 900px) {
+    .interested-wrapper{
+        flex-direction: column;
+    }
+    .interested-wrapper h3{
+        max-width: 500px;
+    }
+    .interested-wrapper p{
+        max-width: 500px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .interested-wrapper div{
+        flex-direction: column;
+    }
+}
