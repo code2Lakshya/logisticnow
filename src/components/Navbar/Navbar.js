@@ -55,15 +55,15 @@ const Navbar = () => {
                     </div>
                     <div className='navbar-right'>
                         <ul className={`navbar-list ${showMenu ? 'active' : ''}`}>
-                            <li><Link to='/'>Home</Link></li>
-                            <li><Link to='/about'>About</Link></li>
-                            <li id='hover'>
+                            <li onClick={()=>setShowMenu(false)}><Link to='/'>Home</Link></li>
+                            <li onClick={()=>setShowMenu(false)}><Link to='/about'>About</Link></li>
+                            <li onClick={()=>setShowMenu(false)} id='hover'>
                                 <HoverList
                                     heading='Services'
                                     list={['Security', '3PL Services', 'Pest Control', 'Transport', '4PL Services']}
                                 />
                             </li>
-                            <li><Link to='/contact'>Contact Us</Link></li>
+                            <li onClick={()=>setShowMenu(false)}><Link to='/contact'>Contact Us</Link></li>
                         </ul>
                         <button>
                             <span><CiViewList /></span>

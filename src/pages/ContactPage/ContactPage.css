@@ -1,0 +1,150 @@
+.contact-details {
+    width: 100%;
+    padding: 100px 30px;
+}
+
+.contact-details-inner {
+    visibility: visible;
+    opacity: 1;
+}
+
+.contact-details-wrapper {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+.address{
+    flex-shrink: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.active .address{
+    animation: address 0.5s linear 1 forwards;
+}
+@keyframes address{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.address h3,
+.contact-form h3 {
+    font-size: 17px;
+    color: rgb(47, 57, 133);
+    margin-bottom: 20px;
+}
+
+.address p {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.address p span {
+    margin-right: 8px;
+    color: red;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+.contact-form{
+    width: 100%;
+    max-width: 600px;
+    visibility: hidden;
+    opacity: 0;
+}
+.active .contact-form{
+    animation: formMove 0.5s linear 1 forwards;
+}
+@keyframes formMove{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.contact-form form{
+    width: 100%;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form form div{
+    display: flex;
+    gap:15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.contact-form form div input{
+    padding:12px  14px;
+    width: calc(50% - 10px);
+    border: 1px solid rgb(206, 212, 218);
+    background-color: rgb(250, 250, 250);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    outline: none;
+    letter-spacing: 1px;
+}
+input::placeholder{
+    color: rgb(162, 165, 169);
+}
+.contact-form textarea{
+    border: 1px solid rgb(206, 212, 218);
+    background-color: rgb(250, 250, 250);
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding:12px 14px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+textarea::placeholder{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(162, 165, 169);
+}
+.contact-form form button{
+    font-size: 14px;
+    padding:10px 20px;
+    border-radius: 30px;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+.contact-form form button:hover{
+    background-color: white;
+    color: red;
+}
+@media screen and (max-width: 900px) {
+    .address{
+        flex-shrink: 1;
+    }
+}
+@media screen and (max-width: 690px) {
+    .contact-details-wrapper{
+        flex-direction: column;
+    }
+}

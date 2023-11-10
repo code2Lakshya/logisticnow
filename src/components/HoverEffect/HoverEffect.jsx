@@ -10,8 +10,10 @@ const HoverEffect = ({ children, className, className2 }) => {
     useEffect(() => {
         const checkScroll = () => {
             if (itemRef)
-                itemRef.current.getBoundingClientRect().top <= window.innerHeight - 150 && setEffect(true);
+            {
+                itemRef.current?.getBoundingClientRect()?.top <= window.innerHeight - 150 && setEffect(true);
         }
+    }
         window.addEventListener('scroll',checkScroll);
         return ()=>window.removeEventListener('scroll',checkScroll);
     }, [])

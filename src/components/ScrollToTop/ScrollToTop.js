@@ -16,7 +16,6 @@ const ScrollToTop=()=>{
     if(scrollShow)
     return(
         <div className="scrollToTop" onClick={()=>window.scrollTo(0,0)}>
-        {console.log('hi')}
             <span><AiOutlineArrowUp /></span>
         </div>
     );

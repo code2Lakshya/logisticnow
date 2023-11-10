@@ -1,0 +1,33 @@
+.hero-common{
+    width: 100%;
+    background-color: rgb(47, 57, 133);
+    padding: 100px 30px;
+    color: white;
+}
+.hero-common-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hero-common-icons{
+    display: flex;
+    gap:8px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.hero-common-icons a{
+    color: inherit;
+}
+.hero-common-wrapper h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.hero-common-wrapper p{
+    width: 100%;
+    max-width: 500px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    padding:12px 30px;
+    border-left: 2px solid red;
+}

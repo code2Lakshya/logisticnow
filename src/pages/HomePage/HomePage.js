@@ -8,9 +8,11 @@ import HomeIcons from './HomeIcons/HomeIcons';
 import Interested from './Interested/Interested';
 import OurClients from './OurClients/OurClients';
 import Location from './Location/Location';
-import OurGallery from './OurGallery/OurGallery';
+import { useScrollToTop } from '../../utils/Hooks/useScrollToTop';
 
 const HomePage = () => {
+
+useScrollToTop();
 
     return (
         <div className="home-page margin-top">
@@ -19,7 +21,6 @@ const HomePage = () => {
             <HomeAbout />
             <OurServices />
             <HomeIcons />
-            <OurGallery />
             <Interested />
             <OurClients />
             <Location />
