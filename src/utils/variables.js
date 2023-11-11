@@ -21,3 +21,6 @@ export const homeAbout = [
     }
 ]
 export const services=['security','3pl services','pest control','4pl services','transport'];
+
+export const options1=['Freight','Type 1','Type 2','Type 3','Type 4'];
+export const options2=['Incoterms','Type 1','Type 2','Type 3','Type 4'];

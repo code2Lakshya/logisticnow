@@ -5,6 +5,9 @@ import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import {lazy,Suspense} from 'react';
 import Loader from "./components/Loader/Loader";
+import { useContext } from "react";
+import { AppContext } from "./utils/Context/AppContext";
+import Quote from "./components/Quote/Quote";
 
 const AboutPage=lazy(()=> import('./pages/AboutPage/AboutPage'));
 const SecurityPage=lazy(()=>import('./pages/SecurityPage/SecurityPage'));
@@ -15,6 +18,9 @@ const FourPlPage=lazy(()=>import('./pages/FourPlPage/FourPlPage'));
 const ContactPage=lazy(()=>import('./pages/ContactPage/ContactPage'));
 
 function App() {
+
+const {showQuote} = useContext(AppContext);
+
   return (
     <div>
       <Navbar />
@@ -30,6 +36,9 @@ function App() {
       </Routes>
       <Footer />
       <ScrollToTop />
+      {
+        showQuote && <Quote />
+      }
     </div>
   );
 }

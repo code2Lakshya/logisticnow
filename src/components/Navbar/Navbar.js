@@ -10,11 +10,14 @@ import HoverList from '../HoverList/HoverList';
 import { useEffect, useState } from 'react';
 import './Navbar.css';
 import logoSrc from '../../assets/images.png';
+import { useContext } from 'react';
+import { AppContext } from '../../utils/Context/AppContext';
 
 const Navbar = () => {
 
     const [showMenu, setShowMenu] = useState(false);
     const [showBanner,setShowBanner]=useState(true);
+    const {setShowQuote}=useContext(AppContext);
 
     useEffect(()=>{
         const scrollCheck=()=>{
@@ -57,15 +60,16 @@ const Navbar = () => {
                         <ul className={`navbar-list ${showMenu ? 'active' : ''}`}>
                             <li onClick={()=>setShowMenu(false)}><Link to='/'>Home</Link></li>
                             <li onClick={()=>setShowMenu(false)}><Link to='/about'>About</Link></li>
-                            <li onClick={()=>setShowMenu(false)} id='hover'>
+                            <li id='hover'>
                                 <HoverList
                                     heading='Services'
                                     list={['Security', '3PL Services', 'Pest Control', 'Transport', '4PL Services']}
+                                    onClick={()=>setShowMenu(false)}
                                 />
                             </li>
                             <li onClick={()=>setShowMenu(false)}><Link to='/contact'>Contact Us</Link></li>
                         </ul>
-                        <button>
+                        <button onClick={()=>setShowQuote(true)}>
                             <span><CiViewList /></span>
                             Request Quote
                         </button>

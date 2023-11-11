@@ -3,7 +3,7 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 import { Link } from "react-router-dom";
 import './HoverList.css';
 
-const HoverList = ({ heading, list }) => {
+const HoverList = ({ heading, list ,onClick}) => {
 
     const [hoverList, setHoverList] = useState(false);
 
@@ -16,7 +16,7 @@ const HoverList = ({ heading, list }) => {
             {hoverList &&
                 <ul className="hover-list">
                     {
-                        list && list.map((item, index) => <li key={index}>
+                        list && list.map((item, index) => <li key={index} onClick={onClick}>
                             <Link to={item.replaceAll(' ', '-')}>{item}</Link>
                         </li>)
                     }
