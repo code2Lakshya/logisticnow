@@ -15,7 +15,7 @@ const Quote = () => {
         freight: '',
         incoterms: '',
         departure: '',
-        delivery: '',
+        destination: '',
         weight: '',
         dimensions: '',
         name: '',
@@ -33,9 +33,9 @@ const Quote = () => {
         // Network call to server to send data 
         setUserInput({
             freight: '',
-            incoterms: 'Incoterms',
+            incoterms: '',
             departure: '',
-            delivery: '',
+            destination: '',
             weight: '',
             dimensions: '',
             name: '',
@@ -83,7 +83,7 @@ const Quote = () => {
                                 />
                                 <input type='text'
                                     name='destination'
-                                    placeholder="Delivery City"
+                                    placeholder="Destination City"
                                     value={userInput.destination}
                                     onChange={changeHandler}
                                     required
